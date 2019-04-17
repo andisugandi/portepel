@@ -2,9 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Portfolio Apps</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Let's list all the jobs</h1>
+
+    {% for job in jobs.all %}
+      <h2>{{ job.title }}</h2>
+      <p>{{ job.summary }} - {{ job.image.url }}</p>
+      <br>
+    {% endfor %}
   </body>
 </html>
