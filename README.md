@@ -22,4 +22,9 @@ Portepel is a simple Django (web) application built to provide simple image gall
         $ pip install -r requirements.txt
         $ python manage.py runserver
 
-6. Using a browser, go to `http://127.0.0.1:8000` and you'll see the application running.
+6. Using web browser, go to `http://127.0.0.1:8000` and you'll see the application running
+
+7. Login to Django Admin: `http://127.0.0.1:8000/admin` to start uploading portfolio content and image.
+
+## Demo
+[![Web Apps of Galeri Data SQM](https://img.youtube.com/vi/tvdV1UAr564/0.jpg)](https://www.youtube.com/watch?v=tvdV1UAr564)
