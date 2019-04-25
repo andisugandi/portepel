@@ -17,18 +17,19 @@ Portepel is a simple Django (web) application built to provide simple image gall
 
         $ cd portepel
 
-5. Change DATABASE configuration in 
-
+5. Change DATABASE configuration in `portfolio/settings.py` file:
+	```python
 	DATABASES = {
 	    'default': {
 	        'ENGINE': 'django.db.backends.postgresql',
-		'NAME': 'portfoliodb',
-		'USER':'julia',
-		'PASSWORD':'bismillah90=-',
+		'NAME': 'youtpostgresqldb',
+		'USER':'yourpostgresqluser',
+		'PASSWORD':'yourpostgresqluserpassword',
 		'HOST':'127.0.0.1',
 		'PORT':'5432',
 	    }
 	}
+	```
 
 6. Install Python modules required, and run the server:
 
