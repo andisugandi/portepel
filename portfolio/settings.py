@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '192.168.1.31',
 ]
 
 
@@ -81,9 +80,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-		'NAME': 'portfoliodb',
-		'USER':'julia',
-		'PASSWORD':'bismillah90=-',
+		'NAME': 'yourportfoliodb',
+		'USER':'yourpostgresqluser',
+		'PASSWORD':'youruserpostgresqlpassword',
 		'HOST':'127.0.0.1',
 		'PORT':'5432',
     }
