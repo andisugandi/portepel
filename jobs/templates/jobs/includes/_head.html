@@ -1,0 +1,21 @@
+{% load static %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.8.5">
+<!-- <title>Julia Kanaya Album</title> -->
+<!-- Site Title -->
+{% if job.title %}
+<title>Julia Kanaya Album - {{ job.title }}</title>
+{% else %}
+<title>Julia Kanaya Album</title>
+{% endif %}
+<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'jobs/bootstrap/css/bootstrap.min.css' %}">
+<!-- Fontawesome CSS -->
+<link rel="stylesheet" href="{% static 'jobs/fontawesome/css/all.min.css' %}">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="{% static 'jobs/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'jobs/css/album.css' %}">

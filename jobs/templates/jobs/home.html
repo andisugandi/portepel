@@ -1,16 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio Apps</title>
-  </head>
-  <body>
-    <h1>Let's list all the jobs</h1>
+{% extends "jobs/base.html" %}
 
-    {% for job in jobs.all %}
-      <h2>{{ job.title }}</h2>
-      <p>{{ job.summary }} - {{ job.image.url }}</p>
-      <br>
-    {% endfor %}
-  </body>
-</html>
+{% block content %}
+  {% load humanize %}
+  {% include 'jobs/includes/_jumbotron.html' %}
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        {% for job in jobs.all %}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="{% url 'detail' job.id %}">
+              <img class="card-img-top" src="{{ job.image.url }}">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{ job.title }}</h5>
+              <p class="card-text">{{ job.summary }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'detail' job.id %}" class="btn btn-sm btn-outline-secondary" role="button">View</a>
+                  <a href="{% url 'detail' job.id %}" class="btn btn-sm btn-outline-secondary" role="button">Edit</a>
+                </div>
+                <small class="text-muted">{{ job.created_at|naturaltime }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock content %}

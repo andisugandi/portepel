@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  {% load humanize %}
+  <head>
+    {% include 'jobs/includes/_head.html' %}
+  </head>
+  <body>
+    <!-- Header -->
+    {% include 'jobs/includes/_header.html' %}
+
+    <main role="main">
+      {% block content %}
+      {% endblock content %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'jobs/includes/_footer.html' %}
+
+    <!-- Scripts -->
+    {% include 'jobs/includes/_scripts.html' %}
+  </body>
+</html>
