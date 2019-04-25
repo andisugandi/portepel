@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Job
 
 def home(request):
-    jobs = Job.objects
+    jobs = Job.objects.all().order_by('created_at')
     return render(request, 'jobs/home.html', {'jobs':jobs})
 
 def detail(request, job_id):

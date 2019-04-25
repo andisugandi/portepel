@@ -4,7 +4,7 @@ Portepel is a simple Django (web) application built to provide simple image gall
 
 ## Getting Started
 
-1. Make sure Python 3.x and `venv` module is already installed.
+1. Make sure Python 3.x and `venv` module are already installed.
 
 2. Create Python virtual environment and then activate it as shown in [Installing packages using pip and virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) tutorial.
 
